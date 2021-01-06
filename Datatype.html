@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Datatype</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="human"></p>
+<p id="character"></p>
+<p id="sentence"></p>
+<p id="special character"></p>
+<p id="random"></p>
+<p id="low"></p>
+<p id="maximum"></p>
+<p id="round"></p>
+<p id="roundup"></p>
+<p id="roundown"></p>
+<p id="array"></p>
+<p id="sort"></p>
+<p id="join"></p>
+<!-- working with an object -->
+<script>
+    var car = {type:"Acura", model:"integra", color:"white"};
+    document.getElementById("demo").innerHTML= car.model;
+</script>
+<!-- working with an strings in objects -->
+<script>
+    var person = {firstName:"Agbo", lastName:"Idiku", middleName:"Susanna", age:21, eyeColor:"brown"};
+    document.getElementById("human").innerHTML= person.firstName + "&nbsp" + person.middleName + "&nbsp" + person.lastName + "&nbsp"+ "has" + "&nbsp" + person.eyeColor + "&nbsp" + "eyes.";
+</script>
+<!-- working with an strings -->
+<script>
+    var studentName = "Debbie Chinda"
+    var studentName2 = "Ray Monroe"
+    document.getElementById("character").innerHTML = studentName + "<br>" + studentName2;
+</script>
+<!-- working with an strings -->
+<script>
+    var line1 = "it's about time";
+    var line2 = "He is called 'Xvaier'";
+    var line3 = 'He is "Xvaier"';
+
+    document.getElementById("sentence").innerHTML = line1 + "<br>" + line2 + "<br>" + line3;
+</script>
+<!-- working with an special characters -->
+<script>
+    var y = "Chelsea has the best \"players\" in the league.";
+    document.getElementById("special character").innerHTML = y;
+</script>
+<script>
+    <!-- Javascript for Random Number -->
+    document.getElementById("random").innerHTML = Math.random();
+</script>
+<script>
+    <!-- Minimum and Maximum -->
+    document.getElementById("low").innerHTML = Math.min(600,300,50,75,-5,-150);
+    document.getElementById("maximum").innerHTML = Math.max(600,300,50,75,-5,-150);
+</script>
+<script>
+    <!-- Math Round Function -->
+    document.getElementById("round").innerHTML = Math.round(15.4)
+</script>
+<script>
+    <!-- Math Round Up-->
+    document.getElementById("roundup").innerHTML = Math.ceil(15.4)
+    <!-- Math Round Up-->
+    document.getElementById("roundown").innerHTML = Math.floor(15.4)
+</script>
+<script>
+    <!-- Arrays in Javascript-->
+    var fruits = ["Apple", "Orange", "Pear", "Grape", "Tangerine", "Lemon", "Mango"]
+    fruits[0] = "Odara";
+    fruits[6] = "PawPaw";
+    delete fruits [3];
+    document.getElementById("array").innerHTML = fruits.join(" * ");
+</script>
+<script>
+    <!-- Sorting Arrays in JS-->
+    var cars = ["Volvo","Volkswagen","Bora","Toyota"];
+    cars.reverse();
+    document.getElementById("sort").innerHTML = cars;
+</script>
+<script>
+    <!-- Joining Arrays in JS-->
+    var boys = ["Kelvin","Avwerosuoghene","Saduwa","Osharegaga"];
+    var girls = ["Susanna","Agbo","Christie","Idiku"];
+    var combined = girls.concat(boys);
+    document.getElementById("join").innerHTML = combined;
+</script>
+</body>
+</html>
